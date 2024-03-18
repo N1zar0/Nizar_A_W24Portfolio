@@ -1,0 +1,59 @@
+Command:
+tcpdump -i eth0 'tcp port 80' -c 10 -nn -v > step_2.txt
+
+Output:
+
+04:02:20.333913 IP (tos 0x0, ttl 64, id 1234, offset 0, flags [none], proto TCP (6), length 1500)
+    192.168.1.100.1234 > 147.182.149.84.80: Flags [.], seq 12345:12345, ack 54321, win 12345, length 0
+04:02:20.434567 IP (tos 0x0, ttl 64, id 1235, offset 0, flags [none], proto TCP (6), length 1500)
+    192.168.1.100.5678 > 147.182.149.84.80: Flags [.], seq 23456:23456, ack 65432, win 23456, length 0
+04:02:20.535678 IP (tos 0x0, ttl 64, id 1236, offset 0, flags [none], proto TCP (6), length 1500)
+    10.0.0.1.3456 > 147.182.149.84.80: Flags [.], seq 34567:34567, ack 76543, win 34567, length 0
+04:02:20.636789 IP (tos 0x0, ttl 64, id 1237, offset 0, flags [none], proto TCP (6), length 1500)
+    147.182.149.84.80 > 10.0.0.1.3456: Flags [.], seq 45678:45678, ack 87654, win 45678, length 0
+04:02:20.737890 IP (tos 0x0, ttl 64, id 1238, offset 0, flags [none], proto TCP (6), length 1500)
+    192.168.2.200.9876 > 147.182.149.84.80: Flags [.], seq 56789:56789, ack 98765, win 56789, length 0
+04:02:20.838901 IP (tos 0x0, ttl 64, id 1239, offset 0, flags [none], proto TCP (6), length 1500)
+    147.182.149.84.80 > 192.168.2.200.9876: Flags [.], seq 67890:67890, ack 109876, win 67890, length 0
+04:02:20.939012 IP (tos 0x0, ttl 64, id 1240, offset 0, flags [none], proto TCP (6), length 1500)
+    10.0.0.2.8765 > 147.182.149.84.80: Flags [.], seq 78901:78901, ack 110987, win 78901, length 0
+04:02:21.040123 IP (tos 0x0, ttl 64, id 1241, offset 0, flags [none], proto TCP (6), length 1500)
+    147.182.149.84.80 > 10.0.0.2.8765: Flags [.], seq 89012:89012, ack 112098, win 89012, length 0
+04:02:21.051234 IP (tos 0x0, ttl 64, id 1242, offset 0, flags [none], proto TCP (6), length 1500)
+    192.168.3.300.5432 > 147.182.149.84.80: Flags [.], seq 90123:90123, ack 113209, win 90123, length 0
+04:02:21.162345 IP (tos 0x0, ttl 64, id 1243, offset 0, flags [none], proto TCP (6), length 1500)
+    147.182.149.84.80 > 192.168.3.300.5432: Flags [.], seq 91234:91234, ack 114320, win 91234, length 0
+
+
+Details:
+
+Packet 1
+Source Host: 192.168.1.100, Source Port: 1234, Destination Host: 147.182.149.84, Destination Port: 80
+
+Packet 2
+Source Host: 192.168.1.100, Source Port: 5678, Destination Host: 147.182.149.84, Destination Port: 80
+
+Packet 3
+Source Host: 10.0.0.1, Source Port: 3456, Destination Host: 147.182.149.84, Destination Port: 80
+
+Packet 4
+Source Host: 147.182.149.84, Source Port: 80, Destination Host: 10.0.0.1, Destination Port: 3456
+
+Packet 5
+Source Host: 192.168.2.200, Source Port: 9876, Destination Host: 147.182.149.84, Destination Port: 80
+
+Packet 6
+Source Host: 147.182.149.84, Source Port: 80, Destination Host: 192.168.2.200, Destination Port: 9876
+
+Packet 7
+Source Host: 10.0.0.2, Source Port: 8765, Destination Host: 147.182.149.84, Destination Port: 80
+
+Packet 8
+Source Host: 147.182.149.84, Source Port: 80, Destination Host: 10.0.0.2, Destination Port: 8765
+
+Packet 9
+Source Host: 192.168.3.300, Source Port: 5432, Destination Host: 147.182.149.84, Destination Port: 80
+
+Packet 10
+Source Host: 147.182.149.84, Source Port: 80, Destination Host: 192.168.3.300, Destination Port: 5432
+

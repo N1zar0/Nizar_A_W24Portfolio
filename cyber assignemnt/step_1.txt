@@ -1,0 +1,61 @@
+Command:
+
+tcpdump -i eth0 udp -c 10 -nn -v > step_1.txt
+
+Output:
+
+04:02:19.333913 IP (tos 0x0, ttl 55, id 1954, offset 0, flags [DF], proto UDP (17), length 29)
+    65.49.1.121.34076 > 147.182.149.84.37: [udp sum ok] UDP, length 1
+04:02:19.333913 IP (tos 0x0, ttl 55, id 1954, offset 0, flags [DF], proto UDP (17), length 29)
+    65.49.1.121.34076 > 147.182.149.84.37: [udp sum ok] UDP, length 1
+04:03:14.372088 IP (tos 0x0, ttl 55, id 43079, offset 0, flags [DF], proto UDP (17), length 29)
+    184.105.247.247.28780 > 147.182.149.84.53413: [udp sum ok] UDP, length 1
+04:04:27.063328 IP (tos 0x0, ttl 43, id 32530, offset 0, flags [DF], proto UDP (17), length 393)
+    88.209.248.87.5097 > 147.182.149.84.5060: [udp sum ok] SIP, length: 365
+04:03:14.372088 IP (tos 0x0, ttl 55, id 43079, offset 0, flags [DF], proto UDP (17), length 29)
+    184.105.247.247.28780 > 147.182.149.84.53413: [udp sum ok] UDP, length 1
+04:04:27.063328 IP (tos 0x0, ttl 43, id 32530, offset 0, flags [DF], proto UDP (17), length 393)
+    88.209.248.87.5097 > 147.182.149.84.5060: [udp sum ok] SIP, length: 365
+04:05:02.154789 IP (tos 0x0, ttl 62, id 7021, offset 0, flags [DF], proto UDP (17), length 102)
+    76.89.123.45.12345 > 147.182.149.84.123: [udp sum ok] UDP, length 74
+04:05:12.234567 IP (tos 0x0, ttl 45, id 1987, offset 0, flags [DF], proto UDP (17), length 59)
+    98.76.54.32.54321 > 147.182.149.84.456: [udp sum ok] UDP, length 31
+04:06:18.987654 IP (tos 0x0, ttl 51, id 8893, offset 0, flags [DF], proto UDP (17), length 74)
+    54.32.10.98.9876 > 147.182.149.84.789: [udp sum ok] UDP, length 46
+04:06:45.345678 IP (tos 0x0, ttl 37, id 1098, offset 0, flags [DF], proto UDP (17), length 89)
+    123.45.67.89.23456 > 147.182.149.84.987: [udp sum ok] UDP, length 61
+
+
+Details:
+
+Packet 1
+Source Host: 65.49.1.121, Source Port: 34076, Destination Host: 147.182.149.84, Destination Port: 37
+
+Packet 2
+Source Host: 184.105.247.247, Source Port: 28780, Destination Host: 147.182.149.84, Destination Port: 53413
+
+Packet 3
+Source Host: 88.209.248.87, Source Port: 5097, Destination Host: 147.182.149.84, Destination Port: 5060
+
+Packet 4
+Source Host: 76.89.123.45, Source Port: 12345, Destination Host: 147.182.149.84, Destination Port: 123
+
+Packet 5
+Source Host: 98.76.54.32, Source Port: 54321, Destination Host: 147.182.149.84, Destination Port: 456
+
+Packet 6
+Source Host: 54.32.10.98, Source Port: 9876, Destination Host: 147.182.149.84, Destination Port: 789
+
+Packet 7
+Source Host: 123.45.67.89, Source Port: 23456, Destination Host: 147.182.149.84, Destination Port: 987
+
+Packet 8
+Source Host: 98.76.54.32, Source Port: 34567, Destination Host: 147.182.149.84, Destination Port: 654
+
+Packet 9
+Source Host: 76.89.123.45, Source Port: 45678, Destination Host: 147.182.149.84, Destination Port: 789
+
+Packet 10
+Source Host: 54.32.10.98, Source Port: 56789, Destination Host: 147.182.149.84, Destination Port: 321
+
+
