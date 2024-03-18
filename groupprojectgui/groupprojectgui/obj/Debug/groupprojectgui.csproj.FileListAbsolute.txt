@@ -1,0 +1,11 @@
+C:\comp2129\groupprojectgui\groupprojectgui\bin\Debug\groupprojectgui.exe.config
+C:\comp2129\groupprojectgui\groupprojectgui\bin\Debug\groupprojectgui.exe
+C:\comp2129\groupprojectgui\groupprojectgui\bin\Debug\groupprojectgui.pdb
+C:\comp2129\groupprojectgui\groupprojectgui\obj\Debug\groupprojectgui.csproj.AssemblyReference.cache
+C:\comp2129\groupprojectgui\groupprojectgui\obj\Debug\groupprojectgui.csproj.SuggestedBindingRedirects.cache
+C:\comp2129\groupprojectgui\groupprojectgui\obj\Debug\groupprojectgui.Form1.resources
+C:\comp2129\groupprojectgui\groupprojectgui\obj\Debug\groupprojectgui.Properties.Resources.resources
+C:\comp2129\groupprojectgui\groupprojectgui\obj\Debug\groupprojectgui.csproj.GenerateResource.cache
+C:\comp2129\groupprojectgui\groupprojectgui\obj\Debug\groupprojectgui.csproj.CoreCompileInputs.cache
+C:\comp2129\groupprojectgui\groupprojectgui\obj\Debug\groupprojectgui.exe
+C:\comp2129\groupprojectgui\groupprojectgui\obj\Debug\groupprojectgui.pdb
